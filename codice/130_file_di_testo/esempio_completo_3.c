@@ -23,7 +23,7 @@ int main() {
   while (fscanf(fp, "%s%s", persone[dl].cognome, persone[dl].nome) == 2)
    {
      do {
-       c = fgetc(fp);
+       c = fgetc(fp);                 // serve a leggere un singolo carattere da un file 
      } while (c != 'M' && c != 'F');
     persone[dl].sesso = c;
     fscanf(fp, "%d", &persone[dl].anno_nascita);

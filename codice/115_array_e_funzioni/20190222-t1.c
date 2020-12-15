@@ -2,10 +2,10 @@
 
 int f(int d);
 
-void g(int a[]) {
+void g(int a[]) { // il record di attivazione si riferisce a g(a) nel main
   int i;
   for (i = 0; i < 3; i++)
-    *(a + f(a[f(i)])) = f(i);
+    *(a + f(a[f(i)])) = f(i); // *(a+2) = a[2]
 }
 
 int main(int argc, char* argv[]) {

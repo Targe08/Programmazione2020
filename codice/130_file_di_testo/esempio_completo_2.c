@@ -21,8 +21,8 @@ int main() {
   // lettura informazioni da file e salvataggio nell'array
   dl = 0;
   while (fscanf(fp, "%s%s%s%d", persone[dl].cognome, persone[dl].nome, s,
-                &persone[dl].anno_nascita) == 4) {
-    persone[dl].sesso = s[0];
+  &persone[dl].anno_nascita) == 4) {
+  persone[dl].sesso = s[0]; // il carattere s lo copiamo nel campo sesso della persona
     dl++;
   }
 
